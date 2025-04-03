@@ -1,0 +1,30 @@
+
+The script performs several optimization operations:
+
+1. **Device information gathering** - Collects details about your device, Android version, CPU, RAM, etc.
+2. **Root access detection** - Checks if your device has root access for full optimization capabilities
+3. **Cleanup operations** - Removes temporary files and cached data
+4. **Performance settings** - Adjusts animation speeds, UI rendering, and other system settings
+5. **Advanced tweaks (root only)** - Modifies:
+   - CPU governors to improve performance
+   - Memory management settings
+   - I/O schedulers for better storage performance
+   - Thermal throttling controls
+   - Gaming-specific optimizations
+   - DNS settings for faster internet
+
+6. **Auto-persistence** - Sets up automatic reapplication of the optimizations after device reboots
+
+To run this script in Termux:
+
+1. Install Termux from the Play Store
+2. Open Termux and run these commands:
+```
+apt update && apt upgrade -y
+apt install nano
+nano Phone_Boost_V11.sh  # Paste the script here, then press Ctrl+X, Y, Enter to save
+chmod +x Phone_Boost_V11.sh
+./Phone_Boost_V11.sh
+```
+
+The script creates backups of your settings before changing them, so theoretically you could restore your device to its previous state. While many of these optimizations can improve performance, particularly for gaming, keep in mind that some tweaks (especially disabling thermal controls) could potentially cause your device to overheat if used for extended periods.
